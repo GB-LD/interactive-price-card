@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Price Card</title>
+
+    <link rel="stylesheet" href="/my-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <main class="wrapper">
+
+        <header>
+            <h1>Simple, traffic-based pricing</h1>
+            <p>Sign-up for our 30-day trial. No credit card required.</p>
+        </header>
+
+        <section class="card">
+
+            <div class="card_top">
+
+                <div class="card_top_view"><p><span>100K</span> Pageviews</p></div>
+
+                <div class="card_top_price"><span>$16.00</span> / month</div>
+
+                <div class="card_top_range">
+                    <input type="range" class="slider"  min="0" max="4">
+                </div>
+
+                <div class="card_top_choice">
+                    <p>Monthly Billing</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span></span>
+                    </label>
+                    <p>Yearly Billing <span class="discount_big">25% discount</span><span class="discount_small">25%</span></p>
+                </div>
+            </div>
+
+            <div class="card_bottom">
+
+                <div class="card_bottom_list">
+                    <ul>
+                        <li>Unlimited websites</li>
+                        <li>100% data ownership</li>
+                        <li>Email reports</li>
+                    </ul>
+                </div>
+
+                <button type="button" id="trial_button">Start my trial</button>
+
+            </div>
+
+        </section>
+    </main>
+
+    <script src="/dom.js"></script>
+</body>
+</html>
